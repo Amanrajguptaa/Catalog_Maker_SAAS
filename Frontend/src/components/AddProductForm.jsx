@@ -22,7 +22,7 @@ const AddProductForm = () => {
       formDataToSend.append('productDesc',formData.productDesc);
 
       const { data } = await axios.post(
-        'http://localhost:8000/api/product/add-product',
+        'https://catalog-maker-saas-backend.onrender.com/api/product/add-product',
         formDataToSend)
 
         if (data.success) {
