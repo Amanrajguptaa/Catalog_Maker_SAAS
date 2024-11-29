@@ -7,7 +7,7 @@ const ViewProduct = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/product/view-product');
+        const response = await axios.get('https://catalog-maker-saas-backend.onrender.com/api/product/view-product');
         setProducts(response.data.products);
         console.log(products);
       } catch (error) {
